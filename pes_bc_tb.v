@@ -22,8 +22,8 @@ module pes_bc_tb;
     
     initial begin
         // Apply Inputs
-	$dumpfile("iiitb_bc_out.vcd");
-	$dumpvars(0,iiitb_bc_tb);
+	    $dumpfile("pes_bc_out.vcd");
+	    $dumpvars(0,pes_bc_tb);
         reset = 0;
         UpOrDown = 0;
         #30;

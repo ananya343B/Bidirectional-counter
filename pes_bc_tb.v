@@ -9,7 +9,7 @@ module pes_bc_tb;
     wire [3:0] Count;
 
     // Instantiate the Unit Under Test (UUT)
-    iiitb_bc uut (
+    pes_bc uut (
         .Clk(Clk), 
         .reset(reset), 
         .UpOrDown(UpOrDown), 

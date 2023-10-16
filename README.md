@@ -2,8 +2,29 @@
 
 A bidirectional counter is a digital electronic circuit that can count in both the upward and downward directions. It can increment or decrement its count based on the control signals it receives. This type of counter is often used in applications where you need to keep track of events or values that can change in both directions, such as measuring positive and negative changes in a process or monitoring the position of an object moving back and forth. Bidirectional counters are commonly implemented using flip-flops and logic gates to control the counting direction.
 
+**Components**
+
+1. **Flip-Flops:** A 4-bit bidirectional counter consists of four flip-flops, each representing one bit of the counter. These flip-flops store the current count value.
+
+2. **Count Direction Control:** The counter has two control inputs: an "Up" signal and a "Down" signal. When "Up" is active, the counter increments, and when "Down" is active, it decrements. In this case we have taken a single signal which corresponds to 'Up' when high and 'down' when low.
+
+3. **Clock Input:** The counter uses a clock signal to synchronize its operations. All flip-flops change their states on the rising or falling edge of the clock signal, depending on the specific design.
+
 **Working**
 
+1. **Initialization:** The counter is initialized with an initial value. This value represents the starting count.
+
+2. **Counting Direction Control:** Depending on whether you want to count up or down, you set the "Up" or "Down" control signal. The counter will then count in the specified direction with each clock pulse.
+
+3. **Counting Operation:**
+   - When counting up, on each rising (or falling) edge of the clock, the counter increments its current value by 1. This is achieved by routing the carry-out from one flip-flop to the carry-in of the next.
+   - When counting down, the counter decrements the current value by 1 on each clock pulse. This is done by using the borrow-out from one flip-flop to the borrow-in of the next.
+
+4. **Overflow and Underflow Detection:** There should be logic that detects when the counter reaches its maximum value (overflow) or goes below zero (underflow). When an overflow or underflow condition is detected, the counter may wrap around to its minimum or maximum count value or trigger an output signal to indicate the condition.
+
+5. **Output Display:** The current count, represented by the outputs of the four flip-flops, is typically displayed on a visual display device or used in further digital processing.
+
+The synchronous nature of the counter ensures that all bits change simultaneously on each clock edge, which can be advantageous in applications requiring precise and synchronized counting. The control signals allow you to specify the counting direction, making this counter versatile for a wide range of applications, including motor control, position sensing, and many others.
 
 
 We will be applying the ASIC flow to a bidirectional counter.

@@ -26,7 +26,7 @@ A bidirectional counter is a digital electronic circuit that can count in both t
 
 The synchronous nature of the counter ensures that all bits change simultaneously on each clock edge, which can be advantageous in applications requiring precise and synchronized counting. The control signals allow you to specify the counting direction, making this counter versatile for a wide range of applications, including motor control, position sensing, and many others.
 
-![image](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/e63bcfd0-693a-4578-abfc-33ee20bef85c)
+![image](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/924ff128-f69b-47ae-9b5d-50e0f9008ccc)
 
 
 We will be applying the ASIC flow to a bidirectional counter.

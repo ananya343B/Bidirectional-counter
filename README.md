@@ -1,8 +1,10 @@
 # Bidirectional-counter
 
-A bidirectional counter is a synchronous up/down binary counter that has the ability to count in both directions either to or from some preset value as well as zero.
+A bidirectional counter is a digital electronic circuit that can count in both the upward and downward directions. It can increment or decrement its count based on the control signals it receives. This type of counter is often used in applications where you need to keep track of events or values that can change in both directions, such as measuring positive and negative changes in a process or monitoring the position of an object moving back and forth. Bidirectional counters are commonly implemented using flip-flops and logic gates to control the counting direction.
 
-It counts “up” from zero and increasing or incrementing to some preset value, or counts “down” from a predetermined value to zero.
+**Working**
+
+
 
 We will be applying the ASIC flow to a bidirectional counter.
 

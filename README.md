@@ -61,7 +61,7 @@ We will be applying the ASIC flow to a bidirectional counter.
 
 ```cd vsd```
 
-```https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git```
+```git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git```
 
 Open the folder ```sky130RTLDesignAndSynthesisWorkshop``` in ```vsd``` directory
 
@@ -141,3 +141,17 @@ To write the netlist:
 ![ten](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/eb1a639c-d8b2-4fed-880b-4482156b6789)
 
 ![nine](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/89b90038-3f9f-4c08-9199-8f3e0c4464a7)
+
+**Gate Level Simulation**
+
+```iverlog ../my_lib/verilog_model/primitives.v .//my_lib/verilog_model/sky130_fd_sc_hd.v pes_bc_netlist.v pes_bc_tb.v```
+
+```./a.out```
+
+```gtkwave pes_bc_out.vcd```
+
+![ten](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/8c2cb3d6-0931-41ed-be9b-4a3352e92cba)
+
+![wave2](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/ff2dc4e0-a0ea-41c7-a7be-609c780c06f9)
+
+It can be observed that the waveform output of the functional simulation and the GLS are same. We can conclude that the netlist generated is correct.

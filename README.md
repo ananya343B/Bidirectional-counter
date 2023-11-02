@@ -237,5 +237,99 @@ In the Openlane directory,
 
 This opens the Openlane shell in interactive mode
 
+'openlane_open"
+
+#### Preparing the design and synthesis
+
+```prep -design pes_bc```
+'prep_design'
+```run_synthesis```
+'run_synth'
+
+We can find the following synthesis report file in
+
+```Openlane/designs/pes_bc/runs/<latest_run>/reports/synthesis```
+
+'synth_stat`
+
+#### Floorplan
+
+```run_floorplan```
+
+To view floorplan
+
+```magic -T /home/ananyap/Desktop/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_bc.def &``` 
+
+in ```./designs/pes_bc/runs/<latest_run>/results/floorplan```
+3 photo
+
+#### Placement
+
+```run_placement```
+
+To view placement
+
+```magic -T /home/ananyap/Desktop/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_bc.def &```
+
+in ```./designs/pes_bc/runs/<latest_run>/results/placement```
+
+3 photo
+
+The following placement statistics can be found in
+
+```Openlane/designs/pes_bc/runs/<latest run>/logs/placement```
+
+2 photo
+
+#### Routing
+
+```run_routing```
+
+To view routing
+
+```magic -T /home/ananyap/Desktop/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_bc.def &```
+
+in ```./designs/pes_bc/runs/<latest_run>/results/routing```
+
+3 photo
+
+Routing analysis:
+
+2 photo
+
+Detailed routing 
+
+1 photo
+
+#### Clockk tree synthesis
+
+```run_cts```
+
+1 photo
+
+#### Automatic flow in Openlane:
+
+```make mount```
+
+```./flow.tcl -design <design name>```
+
+1 photo
+
+Flow completion:
+
+1 photo
+
+###### Power report
+
+1 photo
+
+###### Area and congestion report
+
+2 photo
+
+
+
+
+
 
 

@@ -32,6 +32,11 @@ The synchronous nature of the counter ensures that all bits change simultaneousl
 We will be applying the ASIC flow to a bidirectional counter.
 
 ### LAB
+<details>  
+<summary>  
+ **STAGE 1: RTL and GLS**
+</summary>
+<br>
 
 **Installation steps**
 
@@ -155,3 +160,5 @@ To write the netlist:
 ![wave2](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/ff2dc4e0-a0ea-41c7-a7be-609c780c06f9)
 
 It can be observed that the waveform output of the functional simulation and the GLS are same. We can conclude that the netlist generated is correct.
+
+</details>

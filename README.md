@@ -34,7 +34,7 @@ We will be applying the ASIC flow to a bidirectional counter.
 ### LAB
 <details>  
 <summary>  
- **STAGE 1: RTL and GLS**
+STAGE 1: RTL Synthesis and GLS Simulation
 </summary>
 <br>
 
@@ -162,3 +162,80 @@ To write the netlist:
 It can be observed that the waveform output of the functional simulation and the GLS are same. We can conclude that the netlist generated is correct.
 
 </details>
+
+<details>  
+<summary>  
+STAGE 1: Physican design
+</summary>
+<br>
+
+##### Main stages in the physical design flow
+
+1. Synthesis
+
+2. Floorplanning
+
+3. Powerplanning
+
+4. Placement
+
+5. Clock Tree Synthesis
+
+6.Routing
+
+7. Signoff
+
+##### Installation of tools:
+
+**Openlane and Docker**
+
+Follow the steps in the below link to install [Docker](https://docs.docker.com/engine/install/ubuntu/)
+
+To install [Openlane2](https://openlane.readthedocs.io/en/latest/getting_started/installation/installation_ubuntu.html)
+
+**MAgic**
+
+Follow the below steps to install **magic**
+
+```
+git clone https://github.com/RTimothyEdwards/magic  
+$ sudo apt-get install m4  
+$ sudo apt-get install tcl-dev  
+$ sudo apt-get install tk-dev  
+$ sudo apt-get install blt  
+$ sudo apt-get install freeglut3  
+$ sudo apt-get install libglut3  
+$ sudo apt-get install libglu1-mesa-dev  
+$ sudo apt-get install libgl1-mesa-dev  
+$ sudo apt-get install csh  
+$ ./configure  
+$ make  
+$ make install
+```
+
+#### Setup
+
+In the Openlane designs directory, create a design directory ```pes_bc``` which has the following components:
+
+'start 1'
+
+The ```config.json``` file is as follows:
+
+'config_json'
+
+We add the design file ```pes_bc.v``` in the ```src``` directory
+
+'verilog_in_src'
+
+#### Invoking Openlane
+
+In the Openlane directory,
+
+``` make mount```
+
+```./flow.tcl -interactive```
+
+This opens the Openlane shell in interactive mode
+
+
+

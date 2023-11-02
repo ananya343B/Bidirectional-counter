@@ -193,7 +193,7 @@ Follow the steps in the below link to install [Docker](https://docs.docker.com/e
 
 To install [Openlane2](https://openlane.readthedocs.io/en/latest/getting_started/installation/installation_ubuntu.html)
 
-**MAgic**
+**Magic**
 
 Follow the below steps to install **magic**
 
@@ -217,15 +217,15 @@ $ make install
 
 In the Openlane designs directory, create a design directory ```pes_bc``` which has the following components:
 
-'start 1'
+![start1](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/4782f6ba-4c07-4b82-88bb-84489010446c)
 
 The ```config.json``` file is as follows:
 
-'config_json'
+![config_json](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/7af4fd3b-e7cd-483d-8d23-741dc5a1d2ec)
 
 We add the design file ```pes_bc.v``` in the ```src``` directory
 
-'verilog_in_src'
+![verilog_in_src](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/02411d08-f77b-48b1-a508-1c97965b4c12)
 
 #### Invoking Openlane
 
@@ -237,35 +237,51 @@ In the Openlane directory,
 
 This opens the Openlane shell in interactive mode
 
-'openlane_open"
+![openlane_open](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/5352bad3-6b39-4fd7-a7d5-b8b23a4011b8)
 
 #### Preparing the design and synthesis
 
 ```prep -design pes_bc```
-'prep_design'
+
+![prep_design](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/b231e069-7459-40b0-ae18-39924798c3fa)
+
 ```run_synthesis```
-'run_synth'
+
+![run_synth](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/c699a152-b25c-4e70-ba84-c5cfb05e063c)
 
 We can find the following synthesis report file in
 
 ```Openlane/designs/pes_bc/runs/<latest_run>/reports/synthesis```
 
-'synth_stat`
+![synthesis_stat](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/2d5b22af-b175-4754-8f59-ce59224f862a)
 
 #### Floorplan
 
 ```run_floorplan```
+
+![run_floorplan](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/a89a66e6-e0e2-4476-b170-d30b15e42a84)
+
 
 To view floorplan
 
 ```magic -T /home/ananyap/Desktop/sky130A.tech lef read ../../tmp/merged.nom.lef def pes_bc.def &``` 
 
 in ```./designs/pes_bc/runs/<latest_run>/results/floorplan```
-3 photo
+
+![floorplan0](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/cfdd3ebb-5e08-41d4-af60-7e416a60055f)
+
+![floorplan1](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/4106500b-157c-4f17-9103-e8d6d28a5606)
+
+![floorplan2](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/9296ee91-405d-4aa1-959f-b9090d2e8fc1)
+
+![floorplan3](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/2e82b591-459d-4622-9390-1dd6bcb392ba)
 
 #### Placement
 
 ```run_placement```
+
+![run_placement](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/ba3aa510-f805-4cee-a5fe-59a9a9d71b12)
+
 
 To view placement
 
@@ -273,17 +289,29 @@ To view placement
 
 in ```./designs/pes_bc/runs/<latest_run>/results/placement```
 
-3 photo
+![placement0](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/035dacb4-a976-4923-be18-2f25b9885fcf)
+
+![placement1](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/d87395b3-a848-4756-8db8-37064fa1174b)
+
+![placement2](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/3972dee3-5e06-4085-b7aa-c7d99d6519f9)
+
+![placement3](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/ca9ff4ee-af0a-4cf8-9787-f65d55109ac9)
+
 
 The following placement statistics can be found in
 
 ```Openlane/designs/pes_bc/runs/<latest run>/logs/placement```
 
-2 photo
+![placement_stat1](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/5f19907e-5c79-4e48-9600-16f11ffc51ed)
+
+![placement_analysis](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/25077527-af76-475b-bd74-4fc80cf4d6e2)
+
 
 #### Routing
 
 ```run_routing```
+
+![run_routing](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/b5082452-9a08-4aab-8755-b397dea567be)
 
 To view routing
 
@@ -291,21 +319,30 @@ To view routing
 
 in ```./designs/pes_bc/runs/<latest_run>/results/routing```
 
-3 photo
+![routing0](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/5caa6072-8f07-492d-9abd-1f53f4235858)
+
+![routing1](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/812d8d32-7651-42fb-a3c2-d4f02f9e81bf)
+
+![routing2](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/57173f3e-45bb-4231-9193-7548906b8f1f)
+
+![routing3](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/d550ff38-9687-4330-887d-53fc8a34f7ba)
 
 Routing analysis:
 
-2 photo
+![routing_analysis1](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/80312dab-009b-4f2b-bc31-c5991c889e1b)
+
+![routing_analysis2](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/ae57f29d-c873-4f95-b958-b4f7f5cd6b5c)
 
 Detailed routing 
 
-1 photo
+![detailed_routing](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/7717f9f5-c5da-4ad3-bb76-c3ece493b55f)
 
 #### Clockk tree synthesis
 
 ```run_cts```
 
-1 photo
+![run_cts](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/0e387f8f-479a-4f86-8d02-a9417c9077a4)
+
 
 #### Automatic flow in Openlane:
 
@@ -313,21 +350,23 @@ Detailed routing
 
 ```./flow.tcl -design <design name>```
 
-1 photo
+![option2](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/943d9fce-05f4-4059-b0aa-5cabd6c58e10)
 
 Flow completion:
 
-1 photo
+![flow_complete](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/ec992682-de6f-4a4d-be63-f82b487c7801)
+
 
 ###### Power report
 
-1 photo
+![power_report_synth](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/aeb8d711-05ad-4cc3-b707-d6104d4f3c8c)
+
 
 ###### Area and congestion report
 
-2 photo
+![area_report](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/5480472f-5af7-4910-9faa-3a21cc1f9303)
 
-
+![congestion_report](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/796b72fd-29ba-4642-bb1b-372430204afe)
 
 
 

@@ -337,7 +337,7 @@ Detailed routing
 
 ![detailed_routing](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/7717f9f5-c5da-4ad3-bb76-c3ece493b55f)
 
-#### Clockk tree synthesis
+#### Clock tree synthesis
 
 ```run_cts```
 
@@ -367,6 +367,9 @@ Flow completion:
 ![area_report](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/5480472f-5af7-4910-9faa-3a21cc1f9303)
 
 ![congestion_report](https://github.com/ananya343B/Bidirectional-counter/assets/142582353/796b72fd-29ba-4642-bb1b-372430204afe)
+
+
+</details>
 
 
 

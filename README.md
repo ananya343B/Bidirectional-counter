@@ -179,9 +179,9 @@ STAGE 1: Physical design
 
 4. Placement
 
-5. Clock Tree Synthesis
+5. Clock Tree Synthesis 
 
- 6.Routing
+6.Routing
 
 7. Signoff
 

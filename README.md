@@ -165,7 +165,7 @@ It can be observed that the waveform output of the functional simulation and the
 
 <details>  
 <summary>  
-STAGE 1: Physican design
+STAGE 1: Physical design
 </summary>
 <br>
 
